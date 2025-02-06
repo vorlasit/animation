@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Loading</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .loading-container {
+            text-align: center;
+        }
+        .loading-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .loading-img {
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-text">Programming Loading...</div>
+        <img class="loading-img" src="https://cdn-icons-png.flaticon.com/512/3274/3274063.png" alt="Loading">
+    </div>
+</body>
+</html>
